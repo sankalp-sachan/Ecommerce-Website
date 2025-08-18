@@ -1,5 +1,5 @@
 // API Base URL (change to your backend address if deployed)
-const API_URL = " http://localhost:5000/api";
+const API_URL = "http://ecommerce-website-backend-1-08w4.onrender.com/api";
 
 // Variables
 let productsList = [];
@@ -277,3 +277,4 @@ document.addEventListener("DOMContentLoaded", () => {
     confirmationModal.classList.add("hidden");
   });
 });
+
