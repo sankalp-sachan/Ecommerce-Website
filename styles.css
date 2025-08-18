@@ -1,0 +1,53 @@
+     @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f8fafc;
+        }
+        
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+        
+        .cart-item:hover {
+            background-color: #f1f5f9;
+        }
+        
+        .sidebar {
+            transition: all 0.3s ease-in-out;
+        }
+        
+        .sidebar.open {
+            transform: translateX(0);
+        }
+        
+        .loading-spinner {
+            animation: spin 1s linear infinite;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        .star-rating .star {
+            color: #d1d5db;
+        }
+        
+        .star-rating .star.filled {
+            color: #f59e0b;
+        }
+        
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .product-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .product-grid {
+                grid-template-columns: 1fr;
+            }
+        }
